@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
+   width: 100%;
 min-height: 100vh;
 display: flex;
 align-items: center;
@@ -13,8 +14,8 @@ justify-content: center;
 
 }
 .container{
-    width: 700px;
-    height: 600px;
+   width: 60%;
+    height: 800px;
     background: #35A096  ;
     border-radius: 10px;
     color: #fff;
@@ -23,19 +24,17 @@ justify-content: center;
     display: flex;
     align-items:center ;
     justify-content: space-between;
-    padding: 35px 45px  ;
+    padding: 35px 70px  ;
  }
  header .current-date{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
  }
  header .icons span{
     height: 40px;
     width: 40px;
-    margin: 0 1px;
     text-align: center;
     line-height: 40px;
-   
   font-size: 35px;
     cursor: pointer;
  }
@@ -43,11 +42,11 @@ justify-content: center;
     background: #a7a4a4;
     border-radius: 10px;
  }
- header .icons span:last-child{
+ /* header .icons span:last-child{
     margin-right: -10px;
- }
+ } */
  .calender{
-    padding: 20px;
+    padding: 35px;
  }
 
  .calender ul{
@@ -57,15 +56,16 @@ justify-content: center;
     text-align: center;
  }
  .calender .weeks li{
+   font-size: 20px;
     font-weight: 600;
  }
- .calender .days{
-    margin-bottom:30px ;
- }
+ 
  .calender .days li{
-margin-top: 40px;
+margin-top: 65px;
 cursor: pointer;
 z-index: 1;
+font-size: 20px;
+font-weight: 600;
  }
  .calender ul li{
     width:  calc(100% / 7);
@@ -74,13 +74,13 @@ z-index: 1;
  .calender .days li::before{
 position: absolute;
 content: "";
-height: 50px;
-width: 50px;
+height: 90px;
+width: 90px;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 z-index: -1;
-border-radius:50% ;
+ 
 
  }
  .days li:hover::before{
